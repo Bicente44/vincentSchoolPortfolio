@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area Calculculation Option</title>
+    <script>
+	    let valid = false;
+	    do {
+            
+		let choice = parseInt(prompt("Please enter the shape you want to calculate the area\n(1: Triangle, 2: Rectangle, 3: Circle)"));
+		
+		    switch (choice) {
+			    case 1:
+				    window.location.replace("TriangularArea.html");
+				    valid = true;
+				    break;
+            			case 2:
+				    window.location.replace("RectangularArea.html");
+				    valid = true;
+				    break;
+            			case 3:
+				    window.location.replace("CircularArea.html");
+				    valid = true;
+				    break;
+            			default:
+				    alert("Not a valid option!");
+		    }
+	    }while (!valid);
+    </script>
+</head>
+</html>

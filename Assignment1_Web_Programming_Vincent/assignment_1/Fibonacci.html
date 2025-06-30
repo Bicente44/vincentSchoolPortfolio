@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Fibonacci Numbers</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script>
+		function calculateFibonacci(n) {
+			let sequence = [];
+
+			if (n <= 0) return sequence;
+
+			sequence.push(0);
+			if (n === 1) return sequence;
+
+			sequence.push(1);
+			for (let i = 2; i <= n; i++) {
+				sequence.push(sequence[i - 1] + sequence[i - 2]);
+                }
+		return sequence;
+	}
+		function format(arr) {
+			return arr.map((num, i) =>
+				((i + 1) % 20 === 0) ? num + '\n' : num
+				).join(', ');
+		}
+
+		var app = angular.module('fact-app', []);
+		app.controller('ctrl', function($scope) {
+			$scope.calculate = function () {
+				$scope.answer = format(calculateFibonacci($scope.n));
+			};
+		});
+	</script>
+</head>
+<body>
+	<div class="text-center bg-body-secondary jumbotron position-relative">
+		<h1><b>Computer Engineering Technology Web Programming</b></h1>
+
+		<div class="p-3 position-absolute" style="right: 60px; bottom: -16px; width: 400px;">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light flex-row">
+				<ul class="navbar-nav flex-row" >
+					<li class="nav-item">
+						<a class="nav-link" href="index.html" style="text-decoration: underline;">Index</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="areaCalculator.html" style="text-decoration: underline;">AreaCalculator</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Fibonacci.html" style="text-decoration: underline;">Fibonacci</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Factorial.html" style="text-decoration: underline;">Factorial</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</div>
+	<div ng-app="fact-app" ng-controller="ctrl">
+	<h1 style="padding-left: 20px;">This Program calculates the numbers in the Fibonacci series.</h1>
+	<h3 style="padding-left: 20px;">Please enter the sequence number of the Fibonacci series</h3>
+	<p style="padding-left: 20px;">Sequence Number: <input type="text" ng-change="calculate()" ng-model="n" placeholder="Enter here"></p>
+	<h3 style="padding-left: 20px;">Fibonacci numbers up to Sequence {{n}}, F<small><small>{{n}}</small></small> : [{{answer}}]</h3>
+	</div>
+</body>
+<footer>
+	<div>
+		<div class="text-center bg-light-subtle jumbotron">
+			<p>[041161454]</p>
+			<p>Vincent Welbourne</p>
+			<p>welb0022@algonquinlive.com</p>
+		</div>
+</footer>
+</html>

@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+}
+
+#header
+{
+    font-size: 18pt;
+    color: black;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+#menu
+{
+    border-style: solid;
+    border-width: 2px;
+    word-spacing: 2em;
+    font-size: 10pt;
+    line-height: 15px;
+    text-align: center;
+    width: 195px;
+    position: relative;
+    float: inline-end;
+    margin-top: -68px;
+    z-index: 10;
+}
+
+#content
+{
+        font-size: 12pt;
+	width: 100%;
+        text-align: left;
+	background-color: gray;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+}	
+
+th, td{
+	border-style: solid;
+	border-color: black;
+	padding: 10px;
+}
+
+
+#footer
+{
+    border-style: solid;
+    border-width: 1px;
+    bottom: 0px;
+    color: black;
+    clear: both;
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+}
+
+#Class {
+    background-color: lightgray;
+}
+
+#ID {
+    background-color: white;
+}
+#Attribute {
+    background-color: lightgray;
+}
+#Pseudo {
+    background-color: white;
+}
+#Contextual {
+    background-color: lightgray;
+}
+#Square {
+	text-align: center;
+}
+#Video {
+	text-align: center;
+}
+#Audio {
+	text-align: center;
+}

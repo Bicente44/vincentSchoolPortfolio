@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<title>CSS Examples</title>
+	<link href="StyleSheet3.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><b>Computer Engineering Technology - Computing Science
+				Web Programming</b></h1>
+	
+		<div id="menu">
+			<h2><a href="index.html">Index</a>  <a href="Multimedia.html">Multimedia</a></h2>
+		</div>
+	</div>
+	<div id="content">
+		<table>
+			<thead>
+				<th>CSS Style Rule</th>
+				<th>Syntax</th>
+				<th>Example</th>
+			</thead>
+			<tbody>
+				<tr id="Class">
+					<td>Class selector</td>
+					<td><pre>
+.first {
+	font-style: italic;
+	color: brown;
+}</pre></td>
+					<td>
+						<h3 style="color:red;">Reviews</h3>
+						<p style="color:red;">By Rejaul on Jan 15, 2021</p>
+						I love Central Park.</td>
+				</tr>
+                                <tr id="ID">
+                                        <td>Id selector</td>
+					<td><pre>
+#latestComment {
+		font-style: italic;
+		color: blue;
+}</pre></td>
+					<td><h3>Reviews</h3>
+						<p style="color:blue;">By Rejaul on Jan 15, 2021<br>
+						<br>
+						I love Central Park.<br></p></td>
+                                </tr>
+				<tr id="Attribute">
+					<td>Attribute selector</td>
+					<td><pre>
+[title] {
+	cursor: help;
+	padding-bottom: 3px;
+	border-bottom: 2px dotted blue;
+	text-decoration: none;
+}</pre></td>
+					<td>
+					<img src="ca.png" width="40" height="35"><br>
+					<h1><a href="https://www.canada.ca/">Canada</a></h1><br>
+					Canada is a North American country consisting of...<br>
+					<img src="Canada_1.png" width="150px" height="150px">
+					<img src="Canada_2.png" width="150px" height="150px">
+					<img src="Canada_3.png" width="150px" height="150px"></td>
+				</tr>
+				<tr id="Pseudo">
+					<td>Pseudo selector</td>
+					<td><pre>
+a:link {
+	text-decoration: underline;
+	color: blue;
+	)
+
+a:visited {
+	text-decoration: underline;
+	color: purple;
+	}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+	}</pre></td>
+						<td>To know about links visit <a href="https://www.w3.org/">W3C</a> website.
+							<ol>
+								<li><a href="https://google.ca">Google</a>
+								<li><a href="https://ca.yahoo.com/">Yahoo</a>
+								<li><a href="https://www.amazon.ca/">Amazon</a>
+							</ol></td>
+				</tr>
+				<tr id="Contextual">
+					<td>Contextual selector</td>
+					<td><pre>
+ul a:link {
+background-color: yellow;
+}
+
+#main div p:first-child {
+	color: green;
+	}</pre></td>
+							<td>
+		                     			<ul>
+								<li><a href="https://google.ca"><mark>Google</mark></a>
+								<li><a href="https://ca.yahoo.com/"><mark>Yahoo</mark></a>
+								<li><a href="https://www.amazon.ca/"><mark>Amazon</mark></a>
+           						</ul>
+							<p style="color:green;">I love Central Park</p>
+							<p>I love National Park</p>
+
+				</tr>
+                        </tbody>
+		</table>
+	</div>
+	<div id="footer">
+		<p>[041161454]</p>
+		<p>Vincent Welbourne</p>
+		<p>welb0022@algonquinlive.com</p>
+	</div>
+
+</body>
+
+</html>

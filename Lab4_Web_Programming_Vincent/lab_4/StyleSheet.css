@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+}
+
+#header
+{
+	font-size: 18pt;
+	color: black;
+	background-color: lightgrey;
+	width: 100%;
+	text-align: center;
+	line-height: 100px;
+}
+
+#menu
+{
+ 	/*border-style: solid;
+ 	border-width: 2px;*/
+	word-spacing: 2em;
+	font-size: 10pt;
+	line-height: 15px;
+	text-align: center;
+	width: 245px;
+	position: relative;
+	float: inline-end;
+	margin-right: 40px;
+	background-color: #efefef;
+	margin-top: -80px;
+}
+
+#footer
+{
+	/*border-style: solid;
+ 	border-width: 1px;*/
+	bottom: 0px;
+	color: black;
+	background-color: lightgrey;
+	clear: both;
+	text-align: center;
+	padding: 2px;
+	width: 100%;
+	line-height: 25px;
+}
